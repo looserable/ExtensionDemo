@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		522801C61CEC7D1D00D59C40 /* SimpleTimerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 522801C51CEC7D1D00D59C40 /* SimpleTimerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		522801CD1CEC7D1D00D59C40 /* SimpleTimerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522801C31CEC7D1D00D59C40 /* SimpleTimerKit.framework */; };
+		522801D41CEC7D1D00D59C40 /* SimpleTimerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522801D31CEC7D1D00D59C40 /* SimpleTimerKitTests.swift */; };
+		522801D81CEC7D1D00D59C40 /* SimpleTimerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522801C31CEC7D1D00D59C40 /* SimpleTimerKit.framework */; };
+		522801D91CEC7D1D00D59C40 /* SimpleTimerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 522801C31CEC7D1D00D59C40 /* SimpleTimerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		522801E01CEC7D4000D59C40 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6B784198B5EC700DCF3A3 /* Timer.swift */; };
+		522801E11CEC7D4000D59C40 /* SimpleTimer-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 525625241CEC6D210090282C /* SimpleTimer-Bridging-Header.h */; };
+		522801E21CEC7D4000D59C40 /* KeychainItemWrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = 525625251CEC6D220090282C /* KeychainItemWrapper.h */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		522801E31CEC7D4000D59C40 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 525625261CEC6D220090282C /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		525625121CEC5F1D0090282C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525625111CEC5F1D0090282C /* NotificationCenter.framework */; };
+		525625151CEC5F1D0090282C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525625141CEC5F1D0090282C /* TodayViewController.swift */; };
+		525625181CEC5F1D0090282C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525625161CEC5F1D0090282C /* MainInterface.storyboard */; };
+		5256251C1CEC5F1D0090282C /* SimpleTimerTodayExtenstion.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5256250F1CEC5F1D0090282C /* SimpleTimerTodayExtenstion.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		525625231CEC6CBE0090282C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525625221CEC6CBE0090282C /* Security.framework */; };
+		5294B03C1CED740E00EE91E6 /* SimpleTimerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522801C31CEC7D1D00D59C40 /* SimpleTimerKit.framework */; };
+		5294B0401CEDC21700EE91E6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5294B03F1CEDC21700EE91E6 /* README.md */; };
+		D127E242198B34FC00A09E62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D127E241198B34FC00A09E62 /* AppDelegate.swift */; };
+		D127E244198B34FC00A09E62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D127E243198B34FC00A09E62 /* ViewController.swift */; };
+		D127E247198B34FC00A09E62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D127E245198B34FC00A09E62 /* Main.storyboard */; };
+		D127E249198B34FC00A09E62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D127E248198B34FC00A09E62 /* Images.xcassets */; };
+		D127E255198B34FC00A09E62 /* SimpleTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D127E254198B34FC00A09E62 /* SimpleTimerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		522801CE1CEC7D1D00D59C40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D127E234198B34FC00A09E62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 522801C21CEC7D1D00D59C40;
+			remoteInfo = SimpleTimerKit;
+		};
+		522801D01CEC7D1D00D59C40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D127E234198B34FC00A09E62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D127E23B198B34FC00A09E62;
+			remoteInfo = SimpleTimer;
+		};
+		522801D61CEC7D1D00D59C40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D127E234198B34FC00A09E62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 522801C21CEC7D1D00D59C40;
+			remoteInfo = SimpleTimerKit;
+		};
+		5256251A1CEC5F1D0090282C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D127E234198B34FC00A09E62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5256250E1CEC5F1D0090282C;
+			remoteInfo = SimpleTimerTodayExtenstion;
+		};
+		D127E24F198B34FC00A09E62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D127E234198B34FC00A09E62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D127E23B198B34FC00A09E62;
+			remoteInfo = SimpleTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5228018E1CEC71B900D59C40 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				522801D91CEC7D1D00D59C40 /* SimpleTimerKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525625201CEC5F1D0090282C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5256251C1CEC5F1D0090282C /* SimpleTimerTodayExtenstion.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		522801C31CEC7D1D00D59C40 /* SimpleTimerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleTimerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		522801C51CEC7D1D00D59C40 /* SimpleTimerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTimerKit.h; sourceTree = "<group>"; };
+		522801C71CEC7D1D00D59C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522801CC1CEC7D1D00D59C40 /* SimpleTimerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTimerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		522801D31CEC7D1D00D59C40 /* SimpleTimerKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerKitTests.swift; sourceTree = "<group>"; };
+		522801D51CEC7D1D00D59C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5256250F1CEC5F1D0090282C /* SimpleTimerTodayExtenstion.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SimpleTimerTodayExtenstion.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		525625111CEC5F1D0090282C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		525625141CEC5F1D0090282C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		525625171CEC5F1D0090282C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		525625191CEC5F1D0090282C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525625221CEC6CBE0090282C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		525625241CEC6D210090282C /* SimpleTimer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTimer-Bridging-Header.h"; sourceTree = "<group>"; };
+		525625251CEC6D220090282C /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		525625261CEC6D220090282C /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		5294B03F1CEDC21700EE91E6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D127E23C198B34FC00A09E62 /* SimpleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D127E240198B34FC00A09E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D127E241198B34FC00A09E62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D127E243198B34FC00A09E62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D127E246198B34FC00A09E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D127E248198B34FC00A09E62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D127E24E198B34FC00A09E62 /* SimpleTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D127E253198B34FC00A09E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D127E254198B34FC00A09E62 /* SimpleTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerTests.swift; sourceTree = "<group>"; };
+		D1B6B784198B5EC700DCF3A3 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		522801BF1CEC7D1D00D59C40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		522801C91CEC7D1D00D59C40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522801CD1CEC7D1D00D59C40 /* SimpleTimerKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5256250C1CEC5F1D0090282C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5294B03C1CED740E00EE91E6 /* SimpleTimerKit.framework in Frameworks */,
+				525625121CEC5F1D0090282C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D127E239198B34FC00A09E62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525625231CEC6CBE0090282C /* Security.framework in Frameworks */,
+				522801D81CEC7D1D00D59C40 /* SimpleTimerKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D127E24B198B34FC00A09E62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		522801C41CEC7D1D00D59C40 /* SimpleTimerKit */ = {
+			isa = PBXGroup;
+			children = (
+				522801C51CEC7D1D00D59C40 /* SimpleTimerKit.h */,
+				522801C71CEC7D1D00D59C40 /* Info.plist */,
+			);
+			path = SimpleTimerKit;
+			sourceTree = "<group>";
+		};
+		522801D21CEC7D1D00D59C40 /* SimpleTimerKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				522801D31CEC7D1D00D59C40 /* SimpleTimerKitTests.swift */,
+				522801D51CEC7D1D00D59C40 /* Info.plist */,
+			);
+			path = SimpleTimerKitTests;
+			sourceTree = "<group>";
+		};
+		525625101CEC5F1D0090282C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				525625221CEC6CBE0090282C /* Security.framework */,
+				525625111CEC5F1D0090282C /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		525625131CEC5F1D0090282C /* SimpleTimerTodayExtenstion */ = {
+			isa = PBXGroup;
+			children = (
+				525625141CEC5F1D0090282C /* TodayViewController.swift */,
+				525625161CEC5F1D0090282C /* MainInterface.storyboard */,
+				525625191CEC5F1D0090282C /* Info.plist */,
+			);
+			path = SimpleTimerTodayExtenstion;
+			sourceTree = "<group>";
+		};
+		D127E233198B34FC00A09E62 = {
+			isa = PBXGroup;
+			children = (
+				5294B03F1CEDC21700EE91E6 /* README.md */,
+				D127E23E198B34FC00A09E62 /* SimpleTimer */,
+				D127E251198B34FC00A09E62 /* SimpleTimerTests */,
+				525625131CEC5F1D0090282C /* SimpleTimerTodayExtenstion */,
+				522801C41CEC7D1D00D59C40 /* SimpleTimerKit */,
+				522801D21CEC7D1D00D59C40 /* SimpleTimerKitTests */,
+				525625101CEC5F1D0090282C /* Frameworks */,
+				D127E23D198B34FC00A09E62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D127E23D198B34FC00A09E62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D127E23C198B34FC00A09E62 /* SimpleTimer.app */,
+				D127E24E198B34FC00A09E62 /* SimpleTimerTests.xctest */,
+				5256250F1CEC5F1D0090282C /* SimpleTimerTodayExtenstion.appex */,
+				522801C31CEC7D1D00D59C40 /* SimpleTimerKit.framework */,
+				522801CC1CEC7D1D00D59C40 /* SimpleTimerKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D127E23E198B34FC00A09E62 /* SimpleTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D1B6B784198B5EC700DCF3A3 /* Timer.swift */,
+				525625241CEC6D210090282C /* SimpleTimer-Bridging-Header.h */,
+				525625251CEC6D220090282C /* KeychainItemWrapper.h */,
+				525625261CEC6D220090282C /* KeychainItemWrapper.m */,
+				D127E241198B34FC00A09E62 /* AppDelegate.swift */,
+				D127E243198B34FC00A09E62 /* ViewController.swift */,
+				D127E245198B34FC00A09E62 /* Main.storyboard */,
+				D127E248198B34FC00A09E62 /* Images.xcassets */,
+				D127E23F198B34FC00A09E62 /* Supporting Files */,
+			);
+			path = SimpleTimer;
+			sourceTree = "<group>";
+		};
+		D127E23F198B34FC00A09E62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D127E240198B34FC00A09E62 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D127E251198B34FC00A09E62 /* SimpleTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D127E254198B34FC00A09E62 /* SimpleTimerTests.swift */,
+				D127E252198B34FC00A09E62 /* Supporting Files */,
+			);
+			path = SimpleTimerTests;
+			sourceTree = "<group>";
+		};
+		D127E252198B34FC00A09E62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D127E253198B34FC00A09E62 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		522801C01CEC7D1D00D59C40 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522801C61CEC7D1D00D59C40 /* SimpleTimerKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		522801C21CEC7D1D00D59C40 /* SimpleTimerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 522801DA1CEC7D1D00D59C40 /* Build configuration list for PBXNativeTarget "SimpleTimerKit" */;
+			buildPhases = (
+				522801BE1CEC7D1D00D59C40 /* Sources */,
+				522801BF1CEC7D1D00D59C40 /* Frameworks */,
+				522801C01CEC7D1D00D59C40 /* Headers */,
+				522801C11CEC7D1D00D59C40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTimerKit;
+			productName = SimpleTimerKit;
+			productReference = 522801C31CEC7D1D00D59C40 /* SimpleTimerKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		522801CB1CEC7D1D00D59C40 /* SimpleTimerKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 522801DD1CEC7D1D00D59C40 /* Build configuration list for PBXNativeTarget "SimpleTimerKitTests" */;
+			buildPhases = (
+				522801C81CEC7D1D00D59C40 /* Sources */,
+				522801C91CEC7D1D00D59C40 /* Frameworks */,
+				522801CA1CEC7D1D00D59C40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				522801CF1CEC7D1D00D59C40 /* PBXTargetDependency */,
+				522801D11CEC7D1D00D59C40 /* PBXTargetDependency */,
+			);
+			name = SimpleTimerKitTests;
+			productName = SimpleTimerKitTests;
+			productReference = 522801CC1CEC7D1D00D59C40 /* SimpleTimerKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5256250E1CEC5F1D0090282C /* SimpleTimerTodayExtenstion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5256251D1CEC5F1D0090282C /* Build configuration list for PBXNativeTarget "SimpleTimerTodayExtenstion" */;
+			buildPhases = (
+				5256250B1CEC5F1D0090282C /* Sources */,
+				5256250C1CEC5F1D0090282C /* Frameworks */,
+				5256250D1CEC5F1D0090282C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTimerTodayExtenstion;
+			productName = SimpleTimerTodayExtenstion;
+			productReference = 5256250F1CEC5F1D0090282C /* SimpleTimerTodayExtenstion.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D127E23B198B34FC00A09E62 /* SimpleTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D127E258198B34FC00A09E62 /* Build configuration list for PBXNativeTarget "SimpleTimer" */;
+			buildPhases = (
+				D127E238198B34FC00A09E62 /* Sources */,
+				D127E239198B34FC00A09E62 /* Frameworks */,
+				D127E23A198B34FC00A09E62 /* Resources */,
+				525625201CEC5F1D0090282C /* Embed App Extensions */,
+				5228018E1CEC71B900D59C40 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5256251B1CEC5F1D0090282C /* PBXTargetDependency */,
+				522801D71CEC7D1D00D59C40 /* PBXTargetDependency */,
+			);
+			name = SimpleTimer;
+			productName = SimpleTimer;
+			productReference = D127E23C198B34FC00A09E62 /* SimpleTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D127E24D198B34FC00A09E62 /* SimpleTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D127E25B198B34FC00A09E62 /* Build configuration list for PBXNativeTarget "SimpleTimerTests" */;
+			buildPhases = (
+				D127E24A198B34FC00A09E62 /* Sources */,
+				D127E24B198B34FC00A09E62 /* Frameworks */,
+				D127E24C198B34FC00A09E62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D127E250198B34FC00A09E62 /* PBXTargetDependency */,
+			);
+			name = SimpleTimerTests;
+			productName = SimpleTimerTests;
+			productReference = D127E24E198B34FC00A09E62 /* SimpleTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D127E234198B34FC00A09E62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "OneV's Den";
+				TargetAttributes = {
+					522801C21CEC7D1D00D59C40 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					522801CB1CEC7D1D00D59C40 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D127E23B198B34FC00A09E62;
+					};
+					5256250E1CEC5F1D0090282C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LAL4H67334;
+					};
+					D127E23B198B34FC00A09E62 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = LAL4H67334;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					D127E24D198B34FC00A09E62 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = D127E23B198B34FC00A09E62;
+					};
+				};
+			};
+			buildConfigurationList = D127E237198B34FC00A09E62 /* Build configuration list for PBXProject "SimpleTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D127E233198B34FC00A09E62;
+			productRefGroup = D127E23D198B34FC00A09E62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D127E23B198B34FC00A09E62 /* SimpleTimer */,
+				D127E24D198B34FC00A09E62 /* SimpleTimerTests */,
+				5256250E1CEC5F1D0090282C /* SimpleTimerTodayExtenstion */,
+				522801C21CEC7D1D00D59C40 /* SimpleTimerKit */,
+				522801CB1CEC7D1D00D59C40 /* SimpleTimerKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		522801C11CEC7D1D00D59C40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		522801CA1CEC7D1D00D59C40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5256250D1CEC5F1D0090282C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525625181CEC5F1D0090282C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D127E23A198B34FC00A09E62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D127E247198B34FC00A09E62 /* Main.storyboard in Resources */,
+				D127E249198B34FC00A09E62 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D127E24C198B34FC00A09E62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		522801BE1CEC7D1D00D59C40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522801E01CEC7D4000D59C40 /* Timer.swift in Sources */,
+				522801E11CEC7D4000D59C40 /* SimpleTimer-Bridging-Header.h in Sources */,
+				522801E21CEC7D4000D59C40 /* KeychainItemWrapper.h in Sources */,
+				522801E31CEC7D4000D59C40 /* KeychainItemWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		522801C81CEC7D1D00D59C40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522801D41CEC7D1D00D59C40 /* SimpleTimerKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5256250B1CEC5F1D0090282C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525625151CEC5F1D0090282C /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D127E238198B34FC00A09E62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5294B0401CEDC21700EE91E6 /* README.md in Sources */,
+				D127E244198B34FC00A09E62 /* ViewController.swift in Sources */,
+				D127E242198B34FC00A09E62 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D127E24A198B34FC00A09E62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D127E255198B34FC00A09E62 /* SimpleTimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		522801CF1CEC7D1D00D59C40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 522801C21CEC7D1D00D59C40 /* SimpleTimerKit */;
+			targetProxy = 522801CE1CEC7D1D00D59C40 /* PBXContainerItemProxy */;
+		};
+		522801D11CEC7D1D00D59C40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D127E23B198B34FC00A09E62 /* SimpleTimer */;
+			targetProxy = 522801D01CEC7D1D00D59C40 /* PBXContainerItemProxy */;
+		};
+		522801D71CEC7D1D00D59C40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 522801C21CEC7D1D00D59C40 /* SimpleTimerKit */;
+			targetProxy = 522801D61CEC7D1D00D59C40 /* PBXContainerItemProxy */;
+		};
+		5256251B1CEC5F1D0090282C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5256250E1CEC5F1D0090282C /* SimpleTimerTodayExtenstion */;
+			targetProxy = 5256251A1CEC5F1D0090282C /* PBXContainerItemProxy */;
+		};
+		D127E250198B34FC00A09E62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D127E23B198B34FC00A09E62 /* SimpleTimer */;
+			targetProxy = D127E24F198B34FC00A09E62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		525625161CEC5F1D0090282C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525625171CEC5F1D0090282C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		D127E245198B34FC00A09E62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D127E246198B34FC00A09E62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		522801DB1CEC7D1D00D59C40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SimpleTimerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lixiaotao.SimpleTimerKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		522801DC1CEC7D1D00D59C40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SimpleTimerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lixiaotao.SimpleTimerKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		522801DE1CEC7D1D00D59C40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SimpleTimerKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lixiaotao.SimpleTimerKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTimer.app/SimpleTimer";
+			};
+			name = Debug;
+		};
+		522801DF1CEC7D1D00D59C40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SimpleTimerKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lixiaotao.SimpleTimerKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTimer.app/SimpleTimer";
+			};
+			name = Release;
+		};
+		5256251E1CEC5F1D0090282C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SimpleTimerTodayExtenstion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onevcat.SimpleTimer2333.SimpleTimerTodayExtenstion2333;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTimer/SimpleTimer-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		5256251F1CEC5F1D0090282C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SimpleTimerTodayExtenstion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onevcat.SimpleTimer2333.SimpleTimerTodayExtenstion2333;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTimer/SimpleTimer-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		D127E256198B34FC00A09E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D127E257198B34FC00A09E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D127E259198B34FC00A09E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SimpleTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onevcat.SimpleTimer2333;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTimer/SimpleTimer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D127E25A198B34FC00A09E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SimpleTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onevcat.SimpleTimer2333;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleTimer/SimpleTimer-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		D127E25C198B34FC00A09E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleTimer.app/SimpleTimer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimpleTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		D127E25D198B34FC00A09E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleTimer.app/SimpleTimer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimpleTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		522801DA1CEC7D1D00D59C40 /* Build configuration list for PBXNativeTarget "SimpleTimerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522801DB1CEC7D1D00D59C40 /* Debug */,
+				522801DC1CEC7D1D00D59C40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		522801DD1CEC7D1D00D59C40 /* Build configuration list for PBXNativeTarget "SimpleTimerKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522801DE1CEC7D1D00D59C40 /* Debug */,
+				522801DF1CEC7D1D00D59C40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5256251D1CEC5F1D0090282C /* Build configuration list for PBXNativeTarget "SimpleTimerTodayExtenstion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5256251E1CEC5F1D0090282C /* Debug */,
+				5256251F1CEC5F1D0090282C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D127E237198B34FC00A09E62 /* Build configuration list for PBXProject "SimpleTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D127E256198B34FC00A09E62 /* Debug */,
+				D127E257198B34FC00A09E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D127E258198B34FC00A09E62 /* Build configuration list for PBXNativeTarget "SimpleTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D127E259198B34FC00A09E62 /* Debug */,
+				D127E25A198B34FC00A09E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D127E25B198B34FC00A09E62 /* Build configuration list for PBXNativeTarget "SimpleTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D127E25C198B34FC00A09E62 /* Debug */,
+				D127E25D198B34FC00A09E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D127E234198B34FC00A09E62 /* Project object */;
+}
